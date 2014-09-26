@@ -14,7 +14,7 @@ load(File.join(plugin_test_dir, "db", "schema.rb"))
 require File.join(plugin_test_dir, '..', 'init')
 require File.join(plugin_test_dir, '..', 'lib', 'generators', 'acts_as_commentable_with_threading_migration', 'templates', 'comment')
 
-class User < ActiveRecord::Base
+class Profile < ActiveRecord::Base
   has_many :comments
 end
 

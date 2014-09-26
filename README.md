@@ -56,8 +56,8 @@ Usage
 * Add a comment to a model instance, for example an Article:
 
         @article = Article.find(params[:id])
-        @user_who_commented = @current_user
-        @comment = Comment.build_from( @article, @user_who_commented.id, "Hey guys this is my comment!" )
+        @profile_who_commented = @current_profile
+        @comment = Comment.build_from( @article, @profile_who_commented.id, "Hey guys this is my comment!" )
 
 * To make a newly created comment into a child/reply of another comment:
 
